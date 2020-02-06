@@ -12,7 +12,7 @@ class Song
   end
 
   def self.find_by_name(name)
-    @@all.search(&:name)
+    @@all.collect(&:name)
   end
 
   def self.all
