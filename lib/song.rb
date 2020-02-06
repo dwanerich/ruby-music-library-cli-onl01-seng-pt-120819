@@ -19,7 +19,7 @@ class Song
     all.clear
   end
 
-  def self.save
+  def save
     self.class.all << self
   end
 
@@ -43,7 +43,7 @@ class Song
     all.find(&:name)
   end
 
-  # def self.find_or_create_by_name(name)
-  #   find_by_name ||
-  # end
+  def self.find_or_create_by_name(name)
+    find_by_name ||
+  end
 end
