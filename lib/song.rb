@@ -12,11 +12,7 @@ class Song
   end
 
   def self.find_by_name(name)
-    @@all.each do |song|
-    if song.name == self
-      return song.name
-    end
-  end
+    all.find(&:name)
   end
 
   def self.all
