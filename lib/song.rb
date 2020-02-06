@@ -11,6 +11,14 @@ class Song
     self.genre = genre if genre
   end
 
+  def find_by_name(name)
+    @@all.each do |song|
+    if song.name == self
+      return song
+    end
+
+  end
+
   def self.all
     @@all
   end
